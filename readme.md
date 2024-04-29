@@ -15,3 +15,5 @@ Run the following docker commands to start the express server.
 - docker build . -t="docker-express-drizzle"
 - docker run -p 4050:5000 docker-express-drizzle
 ```
+
+You can now access the api on https://localhost:4050

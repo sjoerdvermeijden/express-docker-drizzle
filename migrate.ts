@@ -4,10 +4,10 @@ import pg from "pg";
 
 const run = async () => {
     const client = new pg.Client({
-        host: "172.19.0.3",
+        host: "172.19.0.2",
         port: 5432,
         user: "root",
-        password: "password",
+        password: "root",
         database: "postgres",
     });
 

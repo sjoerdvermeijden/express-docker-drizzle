@@ -1,7 +1,3 @@
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
 ## Setup the Postgres database
 
 Run the following docker commands to setup the postgres database.
@@ -19,7 +15,3 @@ Run the following docker commands to start the express server.
 - docker build . -t="docker-express-drizzle"
 - docker run -p 4050:5000 docker-express-drizzle
 ```
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)

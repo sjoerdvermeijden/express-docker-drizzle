@@ -2,35 +2,23 @@
 
 Foobar is a Python library for dealing with word pluralization.
 
-## Installation
+## Setup the Postgres database
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Run the following docker commands to setup the postgres database.
 
 ```bash
-pip install foobar
+- docker composer up
+- docker container ls > now get the postgres key
+- docker inspect KEY > get the host and use this to make a connection with PGAdmin
 ```
+## Start the express server
 
-## Usage
+Run the following docker commands to start the express server.
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```bash
+- docker build . -t="docker-express-drizzle"
+- docker run -p 4050:5000 docker-express-drizzle
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 
